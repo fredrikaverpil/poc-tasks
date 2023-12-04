@@ -6,6 +6,12 @@ includes:
   public: https://raw.githubusercontent.com/fredrikaverpil/poc-tasks-nested/main/Taskfile.yml
 
 tasks:
+  ciapp:
+    desc: Ciapp wrapper. Run as 'ciapp -- arg1 arg2...'
+    cmds:
+      - ciapp {{.CLI_ARGS}}
+    silent: false
+
   poc-app:
     desc: A POC app written in Go.
     cmds:
