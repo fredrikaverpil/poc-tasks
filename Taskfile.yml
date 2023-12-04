@@ -2,6 +2,9 @@
 
 version: "3"
 
+includes:
+  public: https://raw.githubusercontent.com/fredrikaverpil/poc-tasks-nested/main/Taskfile.yml
+
 tasks:
   poc-app:
     cmds:
